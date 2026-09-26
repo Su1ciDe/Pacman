@@ -67,5 +67,10 @@ namespace CMP.Scripts
 		{
 			return GetInBounds(cellCoords) && availableCells.Contains(GetCellAt(cellCoords));
 		}
+
+		public bool CanMove(Vector2Int nextCell)
+		{
+			return GetCellAtOrDefault(nextCell, CellType.Invalid).GetIsMovable();
+		}
 	}
 }

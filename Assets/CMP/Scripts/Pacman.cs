@@ -70,13 +70,13 @@ namespace CMP.Scripts
 
 		private void TryStartNextMove()
 		{
-			if (queuedDirection != Direction.None && CanMove(queuedDirection))
+			if (queuedDirection != Direction.None && gridData.CanMove(currentCell + queuedDirection.ToVector2Int()))
 			{
 				currentDirection = queuedDirection;
 				queuedDirection = Direction.None;
 			}
 
-			if (currentDirection == Direction.None || !CanMove(currentDirection))
+			if (currentDirection == Direction.None || !gridData.CanMove(currentCell + currentDirection.ToVector2Int()))
 			{
 				moveTimer = 0f;
 				return;
@@ -91,12 +91,6 @@ namespace CMP.Scripts
 		{
 			enabled = false;
 			Animator.Play(FailAnimationName);
-		}
-
-		private bool CanMove(Direction direction)
-		{
-			var nextCell = currentCell + direction.ToVector2Int();
-			return gridData.GetCellAtOrDefault(nextCell, CellType.Invalid).GetIsMovable();
 		}
 	}
 }
