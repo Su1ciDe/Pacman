@@ -46,4 +46,5 @@ namespace CMP.Scripts
             mainCamera.transform.position = new Vector3(gridData.Width / 2f - 0.5f, 0f, -10f);
         }
     }
+			_pacman.Init(gridData, _inputManager);
 }
