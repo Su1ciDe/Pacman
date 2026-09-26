@@ -1,0 +1,53 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+/[Bb]uild/
+/[Ll]ibrary/
+[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+Recordings/
+sysinfo.txt
+*.stackdump
+/Assets/AssetStoreTools*
+
+#*.unitypackage
+#*.unitypackage.meta
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+#/*.DotSettings
+/*.pidb
+*.pidb.meta
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+.consulo/
+/*.tmp
+/*.svd
+.idea
+.vsconfig
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+!/[Aa]ssets/**/*.meta
+#Assets/Resources/DOTweenSettings.asset
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
