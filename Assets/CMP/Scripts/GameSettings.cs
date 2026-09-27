@@ -7,6 +7,7 @@ namespace CMP.Scripts
         public const int AiCharacterCount = 3;
         public static readonly float[] AiJoinDelays = { 3f, 6f, 9f };
         public static float CatchDistance = 1f;
+        public const int ChaseTriggerDistance = 4;
         public static readonly Direction[] DirectionsToCheck =
             { Direction.Left, Direction.Right, Direction.Up, Direction.Down };
 
